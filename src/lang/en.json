@@ -461,6 +461,8 @@
     "smtpBCC": "BCC",
     "Discord Webhook URL": "Discord Webhook URL",
     "wayToGetDiscordURL": "You can get this by going to Server Settings -> Integrations -> View Webhooks -> New Webhook",
+    "discordHiddenServiceURLAddress": "Hide Address",
+    "discordHiddenServiceURLAddressDescription": "Hide the address so that it is not visible to other users.",
     "Bot Display Name": "Bot Display Name",
     "Prefix Custom Message": "Prefix Custom Message",
     "Hello @everyone is...": "Hello {'@'}everyone is…",

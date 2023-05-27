@@ -41,6 +41,11 @@ class Discord extends NotificationProvider {
                     break;
             }
 
+            if (notification.discordHiddenServiceURLAddress) {
+                address = "||hostname:port||";
+                heartbeatJSON["msg"] = "Check the internal server log";
+            }
+
             // If heartbeatJSON is not null, we go into the normal alerting loop.
             if (heartbeatJSON["status"] === DOWN) {
                 let discorddowndata = {

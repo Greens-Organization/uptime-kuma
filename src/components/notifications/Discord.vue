@@ -16,4 +16,15 @@
         <label for="discord-prefix-message" class="form-label">{{ $t("Prefix Custom Message") }}</label>
         <input id="discord-prefix-message" v-model="$parent.notification.discordPrefixMessage" type="text" class="form-control" autocomplete="false" :placeholder="$t('Hello @everyone is...')">
     </div>
+
+    <div class="mb-3">
+        <div class="form-check form-switch">
+            <input v-model="$parent.notification.discordHiddenServiceURLAddress" class="form-check-input" type="checkbox">
+            <label class="form-check-label">{{ $t("discordHiddenServiceURLAddress") }}</label>
+        </div>
+
+        <div class="form-text">
+            {{ $t("discordHiddenServiceURLAddressDescription") }}
+        </div>
+    </div>
 </template>
